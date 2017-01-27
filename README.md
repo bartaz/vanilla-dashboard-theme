@@ -4,7 +4,7 @@ This repo is intended to be used as a boilerplate to create themes for Vanilla f
 
 ## How to use this boilerplate
 
-1. Import this repo into your newly created repo for your new theme. It should be named `vanilla-*-theme` where `*` is the unique name of your theme.
+1. Import this repo into your newly created repo for your new theme. It should be named `vanilla-*-theme` where `*` is the unique name of your theme. If your new repo is hosted on GitHub, you can use their [importer](https://github.com/new/import)
 
 2. Edit the `package.json` file to update the relevant name and repo details.
 
