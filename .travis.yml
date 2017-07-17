@@ -14,7 +14,7 @@ before_script:
 script:
   - npm run test
   - npm run build-examples
-  - percy snapshot --widths "375,1280" _jekyll/_site/ --baseurl "/vanilla-brochure-theme"
+  - percy snapshot --widths "375,1280" _jekyll/_site/ --baseurl "/vanilla-dashboard-theme"
 notifications:
   irc:
     channels:
