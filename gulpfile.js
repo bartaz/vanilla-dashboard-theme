@@ -17,6 +17,7 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 /* Gulp help instructions triggered as Gulp default task */
 gulp.task('help', function() {
   console.log('develop - Watch sass files and generate unminified CSS for development');
+  console.log('jekyll  - Run gulp develop with Jekyll instance to demo examples');
   console.log('test  - Lint Sass');
   console.log('build  - Lint Sass files and generate minified CSS for production');
 });
@@ -24,5 +25,8 @@ gulp.task('help', function() {
 /* Gulp default task list */
 gulp.task('default', ['help']);
 gulp.task('develop', ['watch', 'sass:develop']);
-gulp.task('test', ['lint:sass']);
-gulp.task('build', ['lint:sass', 'sass:build']);
+gulp.task('jekyll', ['watch', 'sass:develop', 'jekyll:serve']);
+gulp.task('test', ['sasslint']);
+gulp.task('build', ['sasslint', 'sass']);
+gulp.task('build-examples', ['jekyll:build']);
+

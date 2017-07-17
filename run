@@ -228,11 +228,11 @@ case $run_command in
             node_run "${project}-watch" "yarn run watch" "--detach"  # Run watch in the background
         fi
 
-        
+
 
         # Run the serve container, publishing the port, and detaching if required
         bundler_run "${project}-serve" "jekyll serve -P ${PORT} -H 0.0.0.0" "--env PORT=${PORT} --publish ${PORT}:${PORT} ${detach}"
-        
+
     ;;
     "stop")
         echo "Stopping all running containers for ${project}"
@@ -240,7 +240,7 @@ case $run_command in
         docker kill ${running_containers}
     ;;
     "watch")
-        
+
         # Read optional arguments
         watch_site=false
         while [[ -n "${1:-}" ]] && [[ "${1:0:1}" == "-" ]]; do
@@ -256,7 +256,7 @@ case $run_command in
             trap "kill_container ${project}-watch-site" EXIT
             bundler_run "${project}-watch-site" "jekyll build --watch" "--detach"  # Run site watcher in the background
         fi
-        
+
         node_install
         node_run "${project}-build" "yarn run build"
         node_run "${project}-watch" "yarn run watch"
@@ -269,7 +269,7 @@ case $run_command in
     "test")
         node_install
         node_run "${project}-yarn-test" "yarn run test"
-        
+
     ;;
     "clean")
         echo "Running 'clean' yarn script"
