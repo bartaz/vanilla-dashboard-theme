@@ -1,10 +1,10 @@
 # Vanilla Dashboard Theme
 
-This is the Vanilla Framework theme for brochure based websites.
+This is the Vanilla Framework theme for dashboard based websites.
 
 ## Theme local development
 
-The simplest way to run Vanilla brochure theme is to first [install Docker](https://docs.docker.com/engine/installation/) (Linux users may need to [add your user to the `docker` group](https://docs.docker.com/engine/installation/linux/linux-postinstall/)), and then use the `./run` script to build the site:
+The simplest way to run Vanilla dashboard theme is to first [install Docker](https://docs.docker.com/engine/installation/) (Linux users may need to [add your user to the `docker` group](https://docs.docker.com/engine/installation/linux/linux-postinstall/)), and then use the `./run` script to build the site:
 
 ``` bash
 ./run build  # Build the CSS into the ./build/ directory
