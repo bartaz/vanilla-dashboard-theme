@@ -13,6 +13,7 @@
       margin: 0;
       max-width: 330px;
       min-width: 155px;
+      padding: 0;
       position: absolute;
       right: 0;
       top: calc(100% + #{$sp-x-small});
@@ -30,7 +31,7 @@
         height: 0;
         pointer-events: none;
         position: absolute;
-        right: $sp-xx-small;
+        right: $sp-small;
         width: 0;
       }
 
@@ -40,12 +41,36 @@
           left: 6px solid transparent;
           right: 6px solid transparent;
         }
-        right: $sp-xx-small + .1rem;
+        right: $sp-small + .1rem;
       }
 
       // When set to false will show the contextual menu
       &[aria-hidden="false"] {
         display: block;
+      }
+    }
+
+    &__group {
+      display: block;
+      padding: $sp-xx-small 0;
+
+      + .p-contextual-menu__group {
+        border-top: 1px solid $color-mid-light;
+        margin: 0;
+      }
+    }
+
+    &__link {
+      clear: both;
+      color: $color-dark;
+      display: block;
+      margin: 0;
+      padding: $sp-xx-small $sp-small;
+      width: 100%;
+
+      &:hover {
+        background-color: $color-light;
+        text-decoration: none;
       }
     }
 
@@ -57,12 +82,12 @@
 
         &::before,
         &::after {
-          left: $sp-xx-small;
+          left: $sp-small;
           right: initial;
         }
 
         &::after {
-          left: $sp-xx-small + .1rem;
+          left: $sp-small + .1rem;
         }
       }
     }
