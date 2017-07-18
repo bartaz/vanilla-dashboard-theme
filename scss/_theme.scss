@@ -7,6 +7,7 @@
 // Import Base files, if needed
 
 // Import Pattern files, if needed
+@import 'patterns_tabs';
 
 // Import Util files, if needed
 
@@ -15,6 +16,7 @@
   //  Include Base mixins, if needed
 
   //  Include Pattern mixins, if needed
+  @include theme-p-tabs;
 
   // Include Util mixins, if needed
 }

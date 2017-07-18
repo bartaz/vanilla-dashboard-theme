@@ -1,0 +1,11 @@
+@import 'settings';
+
+@mixin theme-p-tabs {
+  .p-tabs {
+    @extend .p-card--highlighted;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+}
