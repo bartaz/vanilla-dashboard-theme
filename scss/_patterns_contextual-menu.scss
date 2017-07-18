@@ -1,0 +1,27 @@
+@import 'settings';
+
+@mixin theme-p-contextual-menu {
+  .p-contextual-menu {
+    display: inline-block;
+    position: relative;
+
+    // Dropdown element for contextual menu
+    &__dropdown {
+      @extend .p-card--highlighted;
+      box-shadow: inset hoff voff blur color;
+      margin: 0;
+      max-width: 330px;
+      min-width: 155px;
+      position: absolute;
+      right: 0;
+    }
+
+    // Alignment extension to align the menu to the left
+    &--left {
+
+      .p-contextual-menu__dropdown {
+        left: 0;
+      }
+    }
+  }
+}
