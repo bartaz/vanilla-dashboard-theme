@@ -16,6 +16,7 @@
       position: absolute;
       right: 0;
       top: calc(100% + #{$sp-x-small});
+      z-index: 1;
 
       &::before,
       &::after {
@@ -62,6 +63,22 @@
 
         &::after {
           left: $sp-xx-small + .1rem;
+        }
+      }
+    }
+
+    // Alignment extension to align the menu to the center of the parent
+    &--center {
+
+      .p-contextual-menu__dropdown {
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before,
+        &::after {
+          left: 50%;
+          right: initial;
+          transform: translateX(-50%);
         }
       }
     }
