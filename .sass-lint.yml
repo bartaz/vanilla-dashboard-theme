@@ -95,7 +95,7 @@ rules:
   # ===
 
   # Extends and mixins
-  placeholder-in-extend: 1
+  placeholder-in-extend: 0
 
   # Disallows
   no-color-literals: 1
