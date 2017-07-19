@@ -5,6 +5,7 @@
 @import 'settings';
 
 // Import Base files, if needed
+@import 'icons';
 
 // Import Pattern files, if needed
 @import
@@ -17,6 +18,7 @@
 @mixin vanilla-dashboard-theme {
 
   //  Include Base mixins, if needed
+  @include theme-icons;
 
   //  Include Pattern mixins, if needed
   @include theme-p-contextual-menu;
