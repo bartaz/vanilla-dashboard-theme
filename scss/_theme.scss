@@ -7,7 +7,9 @@
 // Import Base files, if needed
 
 // Import Pattern files, if needed
-@import 'patterns_tooltips';
+@import
+'patterns_contextual-menu',
+'patterns_tooltips';
 
 // Import Util files, if needed
 
@@ -16,6 +18,7 @@
   //  Include Base mixins, if needed
 
   //  Include Pattern mixins, if needed
+  @include theme-p-contextual-menu;
   @include theme-p-tooltips;
 
   // Include Util mixins, if needed
