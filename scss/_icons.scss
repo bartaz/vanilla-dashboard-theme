@@ -8,6 +8,8 @@
 
   %icon {
     @include icon-size($sp-medium);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -17,8 +19,12 @@
 
   .icon--spinner {
     @extend %icon;
-    background: url('#{$assets-path}cf724b67-spinner-dark-grey.svg') no-repeat;
-    background-size: contain;
+    background-image: url('#{$assets-path}65b70b84-spinner-dark-grey.svg');
+  }
+
+  .icon--spinner-white {
+    @extend %icon;
+    background-image: url('#{$assets-path}be6583dc-spinner-white.svg');
   }
 
   // Set a specific icon size
