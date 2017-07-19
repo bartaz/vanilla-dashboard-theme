@@ -14,6 +14,7 @@
 'patterns_tooltips';
 
 // Import Util files, if needed
+@import 'utilities_animations';
 
 @mixin vanilla-dashboard-theme {
 
@@ -26,4 +27,5 @@
   @include theme-p-tooltips;
 
   // Include Util mixins, if needed
+  @include theme-animations;
 }
