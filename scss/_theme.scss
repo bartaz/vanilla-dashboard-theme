@@ -7,7 +7,10 @@
 // Import Base files, if needed
 
 // Import Pattern files, if needed
-@import 'patterns_tabs';
+@import
+'patterns_contextual-menu',
+'patterns_tabs',
+'patterns_tooltips';
 
 // Import Util files, if needed
 
@@ -16,7 +19,9 @@
   //  Include Base mixins, if needed
 
   //  Include Pattern mixins, if needed
+  @include theme-p-contextual-menu;
   @include theme-p-tabs;
+  @include theme-p-tooltips;
 
   // Include Util mixins, if needed
 }
